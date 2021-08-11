@@ -1,0 +1,154 @@
+{
+    "info": {
+        "_postman_id": "1ce38e0f-1185-5702-bcbe-2eeef990774c",
+        "name": "API 1.0",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "todos",
+            "item": [
+                {
+                    "name": "post_todo_list",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "X-Fields",
+                                "value": ""
+                            }
+                        ],
+                        "url": "http://localhost/api/todos/"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "list_todos",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "X-Fields",
+                                "value": ""
+                            }
+                        ],
+                        "url": "http://localhost/api/todos/"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "delete_todo",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": {
+                            "raw": "http://localhost/api/todos/:id",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "path": [
+                                "api",
+                                "todos",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "value": "",
+                                    "key": "id"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "get_todo",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "X-Fields",
+                                "value": ""
+                            }
+                        ],
+                        "url": {
+                            "raw": "http://localhost/api/todos/:id",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "path": [
+                                "api",
+                                "todos",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "value": "",
+                                    "key": "id"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "put_todo",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "X-Fields",
+                                "value": ""
+                            }
+                        ],
+                        "url": {
+                            "raw": "http://localhost/api/todos/:id",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "path": [
+                                "api",
+                                "todos",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "value": "",
+                                    "key": "id"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ],
+            "description": "TODO operations"
+        },
+        {
+            "name": "Swagger specifications",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": "http://localhost/api/swagger.json",
+                "description": "The API Swagger specifications as JSON"
+            },
+            "response": []
+        }
+    ]
+}
