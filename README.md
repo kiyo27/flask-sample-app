@@ -29,18 +29,6 @@ flask 起動
 # FLASK_APP=api flask run --port 80 --host 0.0.0.0
 ```
 
-## サンプルアプリケーション
-
-```python:hello.py
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
-```
-
 サーバ起動
 ```
 $env:FLASK_APP = "hello"
@@ -57,7 +45,6 @@ FLASK_APP=api FLASK_ENV=development flask run --port 80 --host 0.0.0.0
 FLASK_ENV=development FLASK_APP=app flask run --debugger --reload --port 80 --host 0.0.0.0
 ```
 
-
 ## flask-restx
 
 ```
@@ -72,4 +59,20 @@ pip install flask-restx
 
 ```
 pip install marshmallow
+```
+
+## pytest
+
+pip でインストール
+
+```
+pip install pytest
+```
+
+テスト実行
+
+```
+pytest tests/app.py
+// または
+python -m pytest .\tests\app.py
 ```

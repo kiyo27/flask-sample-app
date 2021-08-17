@@ -10,8 +10,8 @@ class TodoDAO(object):
 
     def get(self, id):
         for todo in self.todos:
-            print(todo['id'])
-            print(id)
+            # print(todo['id'])
+            # print(id)
             if todo['id'] == uuid.UUID(id):
                 return todo
         abort(404, "Todo {} doesn't exist".format(id))
@@ -29,6 +29,7 @@ class TodoDAO(object):
         result = schema.load(data)
         result['id'] = uuid.uuid4()
         self.todos.append(result)
+        return result
 
     def update(self, id, data):
         todo = self.get(id)

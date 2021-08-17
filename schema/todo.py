@@ -6,4 +6,4 @@ class TodoSchema(Schema):
         required=True,
         error_messages={'required': {'message': '[task] is required.'}}
     )
-    created_at = fields.DateTime(missing=dt.datetime.now)
+    created_at = fields.DateTime(load_default=dt.datetime.now)
