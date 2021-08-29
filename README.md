@@ -1,3 +1,6 @@
+# Flask-app
+[![Pytest](https://github.com/kiyo27/flask-sample-app/actions/workflows/pytest.yaml/badge.svg)](https://github.com/kiyo27/flask-sample-app/actions/workflows/pytest.yaml)
+
 ## 環境作成
 
 https://flask.palletsprojects.com/en/2.0.x/installation/#python-version
