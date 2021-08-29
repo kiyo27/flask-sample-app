@@ -1,5 +1,6 @@
 # Flask-app
 [![Pytest](https://github.com/kiyo27/flask-sample-app/actions/workflows/pytest.yaml/badge.svg)](https://github.com/kiyo27/flask-sample-app/actions/workflows/pytest.yaml)
+[![version](https://img.shields.io/endpoint?url=https://5p1ommgjfk.execute-api.ap-northeast-1.amazonaws.com/release)](https://github.com/kiyo27/flask-sample-app)
 
 ## 環境作成
 
