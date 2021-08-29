@@ -50,34 +50,12 @@ FLASK_APP=api FLASK_ENV=development flask run --port 80 --host 0.0.0.0
 FLASK_ENV=development FLASK_APP=app flask run --debugger --reload --port 80 --host 0.0.0.0
 ```
 
-## flask-restx
-
-```
-pip install flask-restx
-```
-
-### response marshalling
-
-## marshmallow
-
-インストール
-
-```
-pip install marshmallow
-```
-
 ## pytest
-
-pip でインストール
-
-```
-pip install pytest
-```
 
 テスト実行
 
 ```
-pytest tests/app.py
-// または
 python -m pytest .\tests\app.py
 ```
+
+または、``pip install -e .``を実行して``pytest``を実行。
