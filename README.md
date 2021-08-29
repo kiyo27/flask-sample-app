@@ -1,7 +1,7 @@
 # Flask-app
 [![Pytest](https://github.com/kiyo27/flask-sample-app/actions/workflows/pytest.yaml/badge.svg)](https://github.com/kiyo27/flask-sample-app/actions/workflows/pytest.yaml)
 [![Author](https://img.shields.io/badge/Author-kiyo27-blueviolet)](https://img.shields.io/badge/Author-kiyo27-blueviolet)
-[![version](https://img.shields.io/endpoint?url=https://5p1ommgjfk.execute-api.ap-northeast-1.amazonaws.com/release)](https://github.com/kiyo27/flask-sample-app)
+[![version](https://img.shields.io/endpoint?url=https://cxbxayetb0.execute-api.ap-northeast-1.amazonaws.com/release)](https://github.com/kiyo27/flask-sample-app)
 
 ## 環境作成
 
