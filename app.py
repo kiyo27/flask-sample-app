@@ -1,15 +1,16 @@
-from flask import Flask
+from exceptions.validation_error import handle_validation_error
 from apis import api
+from flask import Flask
 from marshmallow.exceptions import ValidationError
 
 app = Flask(__name__)
 
-@app.errorhandler(ValidationError)
-def handle_validation_error(error):
-    print(error.messages)
-    return {"message": error.messages}, 400
+# @app.errorhandler(ValidationError)
+# def handle_validation_error(error):
+#     print(error.messages)
+#     return {"message": error.messages}, 400
 
-# app.register_error_handler(ValidationError, handle_validation_error)
+app.register_error_handler(ValidationError, handle_validation_error)
 
 api.init_app(app)
 

@@ -28,18 +28,13 @@ class TodoList(Resource):
     @api.expect(todo)
     @api.marshal_with(todo, code=201)
     def post(self):
-        # raise ValidationError("error")
+        # raise ValidationError("custom error")
         return DAO.create(api.payload), 201
 
     @api.doc('list_todos')
     @api.marshal_list_with(todo)
     def get(self):
         return DAO.todos
-
-    # @api.errorhandler(ValidationError)
-    # def handle_validation_error(error):
-    #     print(error.messages)
-    #     return {"message": "error"}, 400
 
 @api.route('/<string:id>')
 @api.response(404, 'Todo not found')
