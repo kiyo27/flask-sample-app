@@ -14,7 +14,7 @@ docker 起動
 docker run -it --rm -p 8080:80 -v ${PWD}:/app python:3.9.6 /bin/bash
 ```
 
-仮想環境作成
+仮想環境作成  
 https://flask.palletsprojects.com/en/2.0.x/installation/#python-version
 
 ```
@@ -51,6 +51,4 @@ postman 出力
 
 ```
 python postman.py
-
 ```
-
